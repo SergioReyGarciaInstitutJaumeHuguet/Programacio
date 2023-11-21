@@ -264,26 +264,26 @@ while Terminar == False:
                     print("")
                     break
 
-            for i in altura1:
-                if i != "[" and i != "]" and i != "'":
-                    print(i,end=" ")
-            print("")
-            for i in altura2:
-                if i != "[" and i != "]" and i != "'":
-                    print(i,end=" ")
-            print("")
-            for i in altura3:
-                if i != "[" and i != "]" and i != "'":
-                    print(i,end=" ")
-            print("")
-            for i in altura4:
-                if i != "[" and i != "]" and i != "'":
-                    print(i,end=" ")
-            print("")
-            for i in altura5:
-                if i != "[" and i != "]" and i != "'":
-                    print(i,end=" ")
-            print("")
+        for i in altura1:
+            if i != "[" and i != "]" and i != "'":
+                print(i,end=" ")
+        print("")
+        for i in altura2:
+            if i != "[" and i != "]" and i != "'":
+                print(i,end=" ")
+        print("")
+        for i in altura3:
+            if i != "[" and i != "]" and i != "'":
+                print(i,end=" ")
+        print("")
+        for i in altura4:
+            if i != "[" and i != "]" and i != "'":
+                print(i,end=" ")
+        print("")
+        for i in altura5:
+            if i != "[" and i != "]" and i != "'":
+                print(i,end=" ")
+        print("")
 
         if letraAcertada > 0: #Este if es solo para ahorrar calculos a la CPU, si lo quitase no pasaría nada
             for i in range(letraAcertada): #Elimino la posición de la letra acertada y la añado en el mismo lugar con la letra bien puesta
