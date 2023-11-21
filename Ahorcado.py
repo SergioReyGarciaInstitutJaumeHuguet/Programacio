@@ -1,5 +1,5 @@
 import random # Importo la librería Random para escoger una palabra aleatoria
-dificultad = 4 #Nivel de dificultad
+dificultad = 1 #Nivel de dificultad
 #Creo la lista de palabras (ChatGPT y palabras mías)
 listaPalabras = ["CIELO", "ENSALADA", "SUEÑO", "LIBRO", "MUSICA", "VIDA", "MUERTE", "LUZ", "OSCURIDAD", "ESPERANZA", "DESESPERACION", "CALOR", "FRIO", "SABOR", "OLOR", "SILENCIO", "RUIDO", "PENSAMIENTO", "ACCION", "PALABRA", "IMAGINACION", "FANTASIA", "REALIDAD", "CREACION", "DESTRUCCION", "PASADO", "FUTURO", "AHORA", "SIEMPRE", "NUNCA", "CORAZON", "MENTE", "ALMA", "CUERPO", "FAMILIA", "AMISTAD", "AMBIENTE", "CIRCUNSTANCIA", "PROBLEMA", "SOLUCION", "DESTINO", "CAMINO", "SECRETO", "AVENTURA", "DESCUBRIMIENTO", "CONOCIMIENTO", "IGNORANCIA", "BONDAD", "MALDAD", "PAZ", "GUERRA", "ARTE", "CIENCIA", "TECNOLOGIA", "NATURALEZA", "CIUDAD", "CAMPO", "OCEANO", "MONTAÑA", "DESERTO", "BOSQUE", "ANIMAL", "PLANTA", "HOMBRE", "MUJER", "NIÑO", "ADULTO", "JOVEN", "VIEJO", "RICO", "POBRE", "GRANDE", "PEQUENO", "LARGO", "CORTO", "RAPIDO", "LENTAMENTE", "ALTO", "BAJO", "ROTO", "ENTERO", "DIFICIL", "FACIL", "FELICIDAD", "TRISTEZA", "ENFADO", "AMOR", "ODIO", "MIEDO", "VALOR", "DUDA", "CONFIANZA", "SORPRESA", "ABURRIMIENTO", "ENCEFALOGRAMA", "CABEZA", "JAUME", "MARIA", "IZAN", "ESPANA", "ARBOL", "MARIPOSA", "COMPUTADORA", "CATEDRAL", "ELEFANTE", "PIJAMA", "KIWI", "PELOTA", "HEROE", "BARCO", "TREN", "OSO", "MANZANA", "GORILA", "CEBRA", "LORO", "LEON", "TIGRE", "JAGUAR", "COCODRILO", "ELECCION", "HORMIGA", "AGUILA", "HALCON", "CALABAZA", "CEBOLLA", "CANGREJO", "CABALLO", "FRESA", "GATO", "PERRO", "CUCHILLO", "MAR", "RANA", "NUBE", "BICICLETA", "LAPIZ", "HORMIGON", "RATON", "LLAVE", "CAMARA", "GUITARRA", "PAJARO", "LINTERNA", "SILLA", "RELOJ", "AGUACATE", "ESMERALDA", "TELESCOPIO", "ESCORPION", "JARDINERO", "PLATILLO", "CIRCUNFERENCIA", "RINOCERONTE", "ELECTRICIDAD", "ENIGMA", "CAPUCHINO", "ALAZAN", "JABALI", "NARCISO", "GALEON", "RUBI", "OXIGENO", "SINFONIA", "CEFALOPODO", "TOBOGAN", "GUSANO", "QUIMERA", "AZULEJO", "MAJESTUOSO", "CAMELLO", "DOMINO", "SALMONELLA", "TENEBROSO", "CAMALEON", "RELOJERIA", "ALEBRIJE", "VINAGRE", "RAPSODIA", "YOGUR", "IMPERMEABLE", "AEROBICO", "TORNADO", "QUINIELA", "AMBIGUO", "PAISAJE", "TIBURON", "PENDULO", "JUBILACION", "CACAHUETE", "MISTERIO", "CARBON", "CUARTEL", "AMAPOLA", "NAVEGAR", "ACROBATA", "CACTUS", "XILOFONO", "EUCALIPTO", "OQUEDAD", "PERSIANA", "EXOTICO", "MALABARISTA", "FOTOGRAFIA", "ESTRATOSFERA", "PALINDROMO", "BUCLE", "VENTANA", "TURBANTE", "KARATE", "CAMARERO", "HOSPITAL", "DIAMANTE", "NINFOMANA", "ANSIEDAD", "VAGABUNDO", "CARAMELO", "TAXIDERMI", "GLOBULO", "ARTESANO", "ENDEMONIADO", "LACRIMOGENO", "UMBRAL", "VIOLIN", "SACAPUNTAS", "SIRENA", "OSCAR", "NEFARIO", "ARMADURA", "PALANCA", "HELICE", "TANGENTE", "CALIZ", "REPLICA", "VOLCAN", "FOSFORO", "PARAPLEJICO", "APATIA", "BUNKER", "EXUDAR", "ANDROIDE", "OBTUSO", "TECLADO", "ESPAÑA", "EUROPA", "AFRICA", "ASIA", "RINOPLASTIA", "HOMOSAPIENS"]
 Terminar = False
@@ -30,8 +30,6 @@ while Terminar == False:
     preguntaFin = False #Pregunta al final del juego que quieres hacer
     victoria = 0
     derrota = 0
-    media = 0 
-    partidas = 0#Contador de victoria, derrota, partidas y media
 
     #Creo al muñeco que tendrá 5 de altura y 8 de ancho
     altura1 = ["", "", "", "", "", "", "", ""]
@@ -65,10 +63,10 @@ while Terminar == False:
             cambiarDificultad = True
             while cambiarDificultad == True: #Pregunto a ver que opción elije
                 print("Escoje tu nivel de dificultad")
-                print('1 - dificultad "facil"')
-                print('2 - dificultad "normal"')
-                print('3 - dificultad "difícil"')
-                print('4 - Dificultad "estandar"')
+                print('1 - Dificultad "estándar"')
+                print('2 - dificultad "fácil"')
+                print('3 - dificultad "normal"')
+                print('4 - dificultad "difícil"')
                 print('5 - volver al menú')
                 preguntar = input("Escoje: ")
                 if preguntar == "1":
@@ -100,14 +98,14 @@ while Terminar == False:
             print("    Aleatoriamente se escoje una palabra secreta y esta palabra es la que debes intentar adivinar.")
             print("    La palabra secreta se oculta tras unas '_', por ejemplo, si la palabra secreta es 'Perro', la palabra será _ _ _ _ _")
             print("    Si aciertas una letra, por ejemplo, la 'r' con 'Perro', se te desbloquearán las dos letras, y la palabra oculta se verá _ _ R R _")
-            print("    IMPORTANTE: No habrán palabras con tildes o números")
+            print("    IMPORTANTE: No habrán palabras con tildes, números o 'Ç'")
             print("")
             print("Dificultad:")
             print("    Tienes una serie de intentos, todo depentiendo de la dificultad que elijas")
-            print("    Dificultad 1 - Facil: Las palabras tendrán un límite de 7 letras y tendrás 10 intentos para adivinarla")
-            print("    Dificultad 2 - Media: Las palabras tendrán un límite de 10 letras y tendrás 6 intentos para adivinarla")
-            print("    Dificultad 3 - Difícil: Las palabras tendrán un mínimo de 8 letras y solo tendrás 3 intentos para adivinarla")
-            print("    Dificultad 4 - Estandar: Es la dificultad que viene por defecto, todas las palabras de la lista serán usadas y tendrás 10 intentos para adivinarla")
+            print("    Dificultad 1 - Estándar: Es la dificultad que viene por defecto, todas las palabras de la lista serán usadas y tendrás 10 intentos para adivinarla")
+            print("    Dificultad 2 - Fácil: Las palabras tendrán un límite de 7 letras y tendrás 10 intentos para adivinarla")
+            print("    Dificultad 3 - Media: Las palabras tendrán un límite de 10 letras y tendrás 6 intentos para adivinarla")
+            print("    Dificultad 4 - Difícil: Las palabras tendrán un mínimo de 8 letras o un máximo de 3 y solo tendrás 3 intentos para adivinarla")
             print("")
         elif accionMenu == "4":
             Terminar = True
@@ -119,13 +117,13 @@ while Terminar == False:
     while repetirPalabra == True:
         palabra = (random.choice(listaPalabras)) #Escojo la palabra aleatoriamente
         rangoPalabra = len(palabra) #Para saber el rango de caracteres de la palabra
-        if dificultad == 1 and rangoPalabra <= 7:
+        if dificultad == 1:
             repetirPalabra = False
-        elif dificultad == 2 and rangoPalabra <= 10:
+        elif dificultad == 2 and rangoPalabra <= 7:
             repetirPalabra = False
-        elif dificultad == 3 and rangoPalabra >= 8:
+        elif dificultad == 3 and rangoPalabra >= 10:
             repetirPalabra = False
-        elif dificultad == 4:
+        elif dificultad == 4 and rangoPalabra >= 8 or rangoPalabra <= 3:
             repetirPalabra = False
         elif dificultad > 4:
             print("")
@@ -142,9 +140,9 @@ while Terminar == False:
             for i in palabra:
                 muestraPalabra += ["_"] #Para añadir los '_' de la palabra
 
-    if dificultad == 1 or dificultad == 4: intentos = 10 #Número de intentos que tienes dependiendo el nivel de dificultad
-    elif dificultad == 2: intentos = 6 #Número de intentos que tienes dependiendo el nivel de dificultad
-    elif dificultad == 3: intentos = 3 #Número de intentos que tienes dependiendo el nivel de dificultad
+    if dificultad == 1 or dificultad == 2: intentos = 10 #Número de intentos que tienes dependiendo el nivel de dificultad
+    elif dificultad == 3: intentos = 6 #Número de intentos que tienes dependiendo el nivel de dificultad
+    elif dificultad == 4: intentos = 3 #Número de intentos que tienes dependiendo el nivel de dificultad
     #Comienzo del juego
     #_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
     while palabraAcertada == False:
@@ -201,7 +199,7 @@ while Terminar == False:
             letrasUsadas += [letra] #Apunto la letra usada que no estaba en la palabra (si es que hay)
             intentos -= 1
             #Ahora dibujo al monigote:
-            if dificultad == 1 or dificultad == 4:
+            if dificultad == 1 or dificultad == 2:
                 if intentos == 9:
                     altura4.pop(0), altura4.insert(0,"|"), altura5.pop(0), altura5.insert(0,"|")
                 elif intentos == 8:
@@ -230,7 +228,7 @@ while Terminar == False:
                     print("")
                     break
 
-            elif dificultad == 2:
+            elif dificultad == 3:
                 if intentos == 5:
                     altura4.pop(0), altura4.insert(0,"|"), altura5.pop(0), altura5.insert(0,"|"), altura2.pop(0), altura2.insert(0,"|"), altura3.pop(0), altura3.insert(0,"|")
                 elif intentos == 4:
@@ -251,7 +249,7 @@ while Terminar == False:
                     print("")
                     break
 
-            elif dificultad == 3:
+            elif dificultad == 4:
                 if intentos == 2:
                     altura4.pop(0), altura4.insert(0,"|"), altura5.pop(0), altura5.insert(0,"|"), altura2.pop(0), altura2.insert(0,"|"), altura3.pop(0), altura3.insert(0,"|"), altura1.pop(0), altura1.insert(0,"_"), altura1.pop(1), altura1.insert(0,"_"), altura1.pop(2), altura1.insert(2,"_"), altura1.pop(3), altura1.insert(1,"_"), altura2.pop(5), altura2.insert(5,"O")
                 elif intentos == 1:
@@ -307,17 +305,12 @@ while Terminar == False:
     if palabraAcertada == True:
         print("¡Felicidades! Has logrado encontrar la palabra secreta ^·^")
         victoria += 1
-        partidas += 1
     else:
         print(f"La palabra secreta era: {palabra}")
         derrota += 1
-        partidas += 1
 
     #Calculamos la media de puntos
-    media = abs((victoria-derrota))
-    media /= partidas
     print("")
-    print(f"Tienes una puntuación de {media:.0f}/100")
     print(f"Has ganado {victoria} partidas y has perdido {derrota}")
     print("")
     
