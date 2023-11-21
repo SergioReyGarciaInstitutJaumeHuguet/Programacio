@@ -5,6 +5,8 @@ listaPalabras = ["CIELO", "ENSALADA", "SUEÑO", "LIBRO", "MUSICA", "VIDA", "MUER
 Terminar = False
 menu = True #Para poder entrar al menú del juego
 boleano = True #Creo un boleano que usaré siempre que lo necesite
+victoria = 0 #Contador de Victoria
+derrota = 0 #Contador de Derrota
 
 while boleano:
     print('¿Tu teclado tiene la letra "Ñ"?') #Preguntamos si el teclado tiene la tecla "Ñ"
@@ -28,8 +30,6 @@ while Terminar == False:
     cambiarDificultad = True #Para escojer la dificultad que quieras
     accionMenu = "" #Para escojer la acción del menú
     preguntaFin = False #Pregunta al final del juego que quieres hacer
-    victoria = 0
-    derrota = 0
 
     #Creo al muñeco que tendrá 5 de altura y 8 de ancho
     altura1 = ["", "", "", "", "", "", "", ""]
