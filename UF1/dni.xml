@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="dnicss.css" ?>
+<dni_delante>
+    <titulo_dni>
+        <pais>ESPAÑA</pais>
+        <nombre>DOCUMENTO NACIONAL DE IDENTIDAD</nombre>
+    </titulo_dni>
+    <info_dni>
+        <bloque1>
+            <foto>
+            </foto>
+            <información>
+                <titulo_apellidos>APELLIDOS/COGNOMS</titulo_apellidos>
+                <apellidos>
+                        REY
+                        GARCIA
+                </apellidos>
+                <titulo_nombre>NOMBRE/NOM</titulo_nombre>
+                <nombre>SERGIO</nombre>
+                <bloque1_1>
+                    <titulo_sexo>SEXO/SEXE</titulo_sexo>
+                    <sexo>M</sexo>
+                    <titulo_nacionalidad>NACIONALIDAD/NACIONALITAT</titulo_nacionalidad>
+                    <nacionalidad>ESP</nacionalidad>
+                </bloque1_1>
+                <titulo_fecha_de_nacimiento>FECHA DE NACIMIENTO/DATA DE NAIXEMENT</titulo_fecha_de_nacimiento>
+                <fecha_de_nacimiento>21 10 2005</fecha_de_nacimiento>
+                <bloque2_1>
+                    <titulo_soporte>NUM SOPORT</titulo_soporte>
+                    <soport>BLE9818188</soport>
+                    <titulo_validez>VALIDEZ/VALIDESA</titulo_validez>
+                    <validez>05 12 2024</validez>
+                </bloque2_1>
+                <firma>Sergio</firma>
+            </información>
+        </bloque1>
+        <bloque2>
+            <num>77798189H</num>
+            <num2>005671</num2>
+        </bloque2>
+    </info_dni>
+</dni_delante>

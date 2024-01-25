@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<animals>
+    <estructura_interna>
+        <vertebrats ossos="si">
+        </vertebrats>
+    </estructura_interna>
+
+    <reproducció>
+        <vivipars desenvolupació="panxa">
+        </vivipars>
+    </reproducció>
+
+    <alimentació>
+        <carnívors comida="carn">
+        </carnívors>
+    </alimentació>
+
+    <hàbitat>
+        <aquàtics hàbitat="aigua">
+        </aquàtics>
+    </hàbitat>
+
+    <moviment>
+        <Condrictios extremitats="ninguna">
+        </Condrictios>
+    </moviment>
+
+    <estatus>
+        <salvatges habitHumá="interfereix">
+        </salvatges>
+    </estatus>
+</animals>

@@ -1,0 +1,121 @@
+factura{
+    color: rgb(70, 95, 240);
+    font-family: 'Arial';
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    width: 80%;
+}
+tituloprincipal{
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    width: '99.6%';
+    margin-top: 2%;
+    padding-bottom: 2%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-right: none;
+    border-left: none;
+}
+titulomedio{
+    display: block;
+    font-weight: bold;
+    width: '99.6%';
+    margin-top: 2%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+}
+titulosemi{
+    font-weight: bold;
+    width: '99.6%';
+    margin-top: 2%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+contacto{
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    float: left;
+    width: 65%;
+    border-top: none;
+}
+contacto > fax, contacto > nombre, contacto > Codigo_postal_Empresa, contacto > Comunidad_autonoma, contacto > nombre, contacto > calle, contacto > cif, contacto > teléfon, fax{
+    float: left;
+    width: 100%;
+}
+contacto > Comunidad_autonoma{
+    width: fit-content;
+}
+contacto > Codigo_postal_Empresa{
+    width: fit-content;
+}
+contacto > cif::before{
+    content: "C.I.F. : ";
+}
+contacto > teléfon::before{
+    content: "teléfon ";
+}
+contacto > fax::before{
+    content: "fax: ";
+}
+datosfactura{
+    border-bottom: solid;
+    border-width: 2px;
+    float: left;
+    width: 34.2181%;
+    border-color: black;
+}
+datosfactura > fecha, datosfactura > pedido, datosfactura > Forma_de_pago{
+    float: right;
+    width: 100%;
+}
+datosfactura > fecha::before{
+    content: "Fecha: ";
+}
+datosfactura > pedido::before{
+    content: "Pedido nº ";
+}
+datosfactura > Forma_de_pago::before{
+    content: "Forma de pago: ";
+}
+Datos_cliente, Datos_factura{
+    display: inline-block;
+}
+Datos_cliente{
+    float: left;
+    width: 100%;
+}
+Datos_cliente > numCliente, Datos_cliente > nombre, Datos_cliente > envio, Datos_cliente > población, Datos_cliente > Cod_Postal, Datos_cliente > provincia{
+    float: left;
+    width: 100%;
+}
+Datos_cliente > numCliente::before{
+    content: "nº cliente: ";
+}
+Datos_cliente > nombre::before{
+    content: "Nombre: ";
+}
+Datos_cliente > envio::before{
+    content: "Dirección de envio: ";
+}
+Datos_cliente > población::before{
+    content: "Población ";
+}
+Datos_cliente > Cod_Postal::before{
+    content: "cod. postal: ";
+}
+Datos_cliente > provincia::before{
+    content: "Provincia: ";
+}
+referencia, descripción, cantidad, precio, impuesto_valor_añadido, importe{
+    float: left;
+    width: fit-content;
+}

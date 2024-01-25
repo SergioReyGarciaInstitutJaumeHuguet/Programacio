@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<comtes>
+	<persona naixement="1006" mort="1035">
+		<nom>Ramon</nom>
+		<cognom>Berenguer</cognom>
+		<territori>Barcelona</territori>
+		<territori>Osona</territori>
+	</persona>
+
+	<persona mort="950">
+		<nom>Ramon</nom>
+		<territori>Tolosa</territori>
+		<territori>Albi</territori>
+	</persona>
+
+	<persona naixement="1700" mort="1752">
+		<nom>Roger</nom>
+		<territori>Carcassona</territori>
+	</persona>
+
+	<persona naixement="890" mort="950">
+		<nom>Sunyer</nom>
+		<territori>Empuries</territori>
+		<territori>Rossello</territori>
+	</persona>
+
+	<persona naixement="840" mort="897">
+		<nom>Guifre</nom>
+		<territori>Barcelona</territori>
+		<territori>Osona</territori>
+		<territori>Girona</territori>
+		<territori>Urgell</territori>
+		<territori>Conflent</territori>
+	</persona>
+</comtes>

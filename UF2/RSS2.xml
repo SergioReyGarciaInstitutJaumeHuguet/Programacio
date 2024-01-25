@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>XSD</title>
+  <link>http://www.sergio.cat</link>
+  <description>Exercicis XSD</description>
+  <item>
+    <title>Begudes</title>
+    <link>http://www.sergio.cat/begudes</link>
+    <pubDate>Thu, 20-04-2023 14:00 CET</pubDate>
+    <description>Aquesta es una activitat d'xsd sobre begudes</description>
+  </item>
+  <item>
+    <title>Edificis</title>
+    <link>http://www.sergio.cat/edificis</link>
+    <pubDate>Fri, 21-04-2023 20:00 CET</pubDate>
+    <description>Aquesta es una activitat d'xsd sobre el xml que vam fer dels edificis</description>
+  </item>
+  <item>
+    <title>Factura</title>
+    <link>http://www.sergio.cat/factura</link>
+    <pubDate>Sat, 22-04-2023 11:00 CET</pubDate>
+    <description>Aquesta es una activitat d'xsd sobre el xml que vam fer de la factura</description>
+  </item>
+  <item>
+    <title>Monitors</title>
+    <link>http://www.sergio.cat/monitors</link>
+    <pubDate>Sat, 22-04-2023 12:45 CET</pubDate>
+    <description>Aquesta es una activitat d'xsd sobre monitors</description>
+  </item>
+</channel>
+
+</rss>

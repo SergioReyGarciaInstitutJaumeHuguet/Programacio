@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE stock SYSTEM "tenda.dtd">
+<stock>
+	<productes>
+		<producte>
+			<nom>XA Pro II </nom>
+			<marca> Salomon </marca>
+			<preu> 92 euros </preu>
+
+			<!-- Comentaris sobre els seg�ent tag:
+				- En cas que hi hagi quantitat disponible s'en mostra la quantitat a trav�s del tag quantitat_disponible 
+				- En cas que no hi hagi quantitat disponible es mostra el tag fer_comanda, que en cas que es vulgui fer una comanda tindr� el valor Si, i No altrament.	
+			-->
+			<quantitat_disponible>120</quantitat_disponible>
+			<distribuidors>
+				<distribuidor>Aresta</distribuidor>
+				<distribuidor>Intemperie</distribuidor>
+			</distribuidors>
+		</producte>
+
+		<producte>
+			<nom>EL CAP SS SHIRT </nom>
+			<marca> Nord Face</marca>
+			<preu> 42,67 euros </preu>
+			<fer_comanda>no</fer_comanda>
+			<distribuidors>
+				<distribuidor>Aresta</distribuidor>
+				<fabrica>
+					<nom>Algo</nom>
+					<adreca>Pol�gon industrial 2, Santa Perp�tua de Moguda</adreca>
+					<tlf>902 234 123 </tlf>
+				</fabrica>
+			</distribuidors>
+
+		</producte>
+		<producte>
+			<nom>EL CAP SS SHIRT </nom>
+			<!-- En alguns casos el tag preu surt abans que el tag marca , i en altres a l'inrev�s, per tant cal tenir en compte que l'ordre pot variar.
+				L'ordre de la resta de tags �s el que es veu reflexat en aquest document, el seu ordre no varia.
+			-->
+			<preu> 42,67 euro </preu>
+			<marca> Nord Face</marca>
+
+			<fer_comanda>Si</fer_comanda>
+			<distribuidors>
+				<distribuidor>Aresta</distribuidor>
+			</distribuidors>
+		</producte>
+	</productes>
+</stock>

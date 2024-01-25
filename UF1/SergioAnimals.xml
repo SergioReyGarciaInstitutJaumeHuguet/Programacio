@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<animals>
+    <estructura_interna>
+        <vertebrats ossos="si">
+            <familia>
+                mamífers
+            </familia>
+            <familia>
+                aus
+            </familia>
+            <familia>
+                peixos
+            </familia>
+            <familia>
+                amfibis
+            </familia>
+            <familia>
+                rèptils
+            </familia>
+        </vertebrats>
+
+        <invertebrats ossos="no">
+            <familia>
+                esponges
+            </familia>
+            <familia>
+                artròpodes
+            </familia>
+            <familia>
+                equinoderms
+            </familia>
+            <familia>
+                anèl·lids
+            </familia>
+            <familia>
+                cnidaris
+            </familia>
+        </invertebrats>
+    </estructura_interna>
+
+    <reproducció>
+        <ovípars desenvolupació="ou">
+            <desenvolupació>
+            Dins d'un ou que ha estat fertilitzat
+            </desenvolupació>
+        </ovípars>
+
+        <vivipars desenvolupació="panxa">
+            <desenvolupació>
+            Dins de la matriu o úter d'un animal femella
+            </desenvolupació>
+        </vivipars>
+
+        <ovovivípars desenvolupació="ou i panxa">
+            <desenvolupació>
+            Dins d'un ou que es troba dintre de l'úter o matriu d'una femella
+            </desenvolupació>
+        </ovovivípars>
+    </reproducció>
+
+    <alimentació>
+        <herbívors comida="plantes">
+            <aliments>
+            plantes
+            </aliments>
+            <aliments>
+            fruites
+            </aliments>
+            <aliments>
+            grans
+            </aliments>
+            <aliments>
+            pol·len
+            </aliments>
+            <aliments>
+            bambú
+            </aliments>
+        </herbívors>
+
+        <carnívors comida="carn">
+            <aliments>
+            carnívors estrictes
+            </aliments>
+            <aliments>
+            hipocarnívors
+            </aliments>
+            <aliments>
+            depredadors
+            </aliments>
+            <aliments>
+            carronyers
+            </aliments>
+        </carnívors>
+
+        <omnívors comida="Carn i plantes">
+        <aliments>
+        Carn
+        </aliments>
+        <aliments>
+        Plantes
+        </aliments>
+        </omnívors>
+    </alimentació>
+
+    <hàbitat>
+        <terrestres hàbitat="terra">
+            <bioma>
+            deserts
+            </bioma>
+            <bioma>
+            boscos
+            </bioma>
+            <bioma>
+            granges
+            </bioma>
+            <bioma>
+            selves
+            </bioma>
+        </terrestres>
+
+        <aquàtics hàbitat="aigua">
+            <bioma>
+            proxims a la superficie
+            </bioma>
+            <bioma>
+            mar
+            </bioma>
+            <bioma>
+            rius
+            </bioma>
+            <bioma>
+            oceans
+            </bioma>
+        </aquàtics>
+    </hàbitat>
+
+    <moviment>
+        <bíbipedes extremitats="dos">
+            <animal>
+            insectes
+            </animal>
+            <animal>
+            aus
+            </animal>
+            <animal>
+            primates
+            </animal>
+        </bíbipedes>
+        <quadrúpedes extremitats="cuatre">
+            <animal>
+            gossos
+            </animal>
+            <animal>
+            tortugues
+            </animal>
+            <animal>
+            lleons
+            </animal>
+            <animal>
+            jaguars
+            </animal>
+            <animal>
+            guineus
+            </animal>
+            <animal>
+            llops
+            </animal>
+            <animal>
+            etc
+            </animal>
+        </quadrúpedes>
+    </moviment>
+
+    <estatus>
+        <salvatges habitHumá="interfereix">
+            <animal>
+            lleons
+            </animal>
+            <animal>
+            osos
+            </animal>
+            <animal>
+            cérvol
+            </animal>
+        </salvatges>
+        <domèstics habitHumá="no interfereix">
+            <animal>
+            gat
+            </animal>
+            <animal>
+            gos
+            </animal>
+            <animal>
+            animals de granges
+            </animal>
+        </domèstics>
+    </estatus>
+</animals>

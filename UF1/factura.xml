@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="Facturacss.css" ?>
+<factura>
+    <número_de_factura>
+        <tituloprincipal>
+        Factura nº 999
+        </tituloprincipal>
+    </número_de_factura>
+    <tabla1>
+        <contacto>
+            <nombre>
+            Equipos Digitales S.L.
+            </nombre>
+            <calle>
+            Av. Valladolid
+            </calle>
+            <Comunidad_autonoma>
+            Madrid
+            </Comunidad_autonoma>
+            <Codigo_postal_Empresa>
+            28015
+            </Codigo_postal_Empresa>
+            <cif>
+            Q-9876543
+            </cif>
+            <teléfon>
+            91.777.66.88
+            </teléfon>
+            <fax>
+            91.777.66.99
+            </fax>
+        </contacto>
+    </tabla1>
+    <tabla2>
+        <datosfactura>
+            <fecha>
+            12-01-2005
+            </fecha>
+            <pedido>
+            731
+            </pedido>
+            <Forma_de_pago>
+            EFECTIVO
+            </Forma_de_pago>
+        </datosfactura>
+    </tabla2>
+    <Datos_cliente>
+        <titulomedio>
+        Datos cliente
+        </titulomedio>
+        <numCliente>
+        879
+        </numCliente>
+        <nombre>
+        Darío Bueno Gutiérrez
+        </nombre>
+        <envio>
+        Av. Oporto nº7 4ºd
+        </envio>
+        <población>
+        Madrid
+        </población>
+        <Cod_Postal>
+        28043
+        </Cod_Postal>
+        <provincia>
+        Madrid
+        </provincia>
+    </Datos_cliente>
+    <Datos_factura>
+    <tabla2>
+        <titulomedio>
+        Datos FACTURA
+        </titulomedio>
+        <referencia>
+            <titulosemi>
+            REF.
+            </titulosemi>
+            <ref1>
+            MII93000F/8
+            </ref1>
+            <ref2>
+            MB8QDIP4
+            </ref2>
+            <ref3>
+            MEDD512M32
+            </ref3>
+            <ref4>
+            HD250GSA7
+            </ref4>
+        </referencia>
+        <descripción>
+            <titulosemi>
+            DESCRIPCIÓN
+            </titulosemi>
+            <des1>
+            MICRO PENTIUM IV 3000MHZ FB800
+            </des1>
+            <des2>
+            PLACA BASE QDI P4
+            </des2>
+            <des3>
+            DIMM DDR 512 3200
+            </des3>
+            <des4>
+            DISCO DURO 250GB S-ATA 7200
+            </des4>
+        </descripción>
+        <titulosemi>
+        Base imponible
+        </titulosemi>
+        <cantidad>
+            <titulosemi>
+            CANT.
+            </titulosemi>
+            <cant1>
+            1
+            </cant1>
+            <cant2>
+            1
+            </cant2>
+            <cant3>
+            3
+            </cant3>
+            <cant4>
+            4
+            </cant4>
+        </cantidad>
+        <precio >
+            <titulosemi>
+            PRECIO.
+            </titulosemi>
+            <pr1>
+            230 eur.
+            </pr1>
+            <pr2>
+            180 eur.
+            </pr2>
+            <pr3>
+            40 eur.
+            </pr3>
+            <pr4>
+            120 eur.
+            </pr4>
+        </precio>
+        <impuesto_valor_añadido>
+            <titulosemi>
+            I.V.A.
+            </titulosemi>
+            <iva1>
+            16.0
+            </iva1>
+            <iva2>
+            16.0
+            </iva2>
+            <iva3>
+            16.0
+            </iva3>
+            <iva4>
+            16.0
+            </iva4>
+        </impuesto_valor_añadido> 
+        <importe>
+            <titulosemi>
+            IMPORTE
+            </titulosemi>
+            <import1>
+            266.80
+            </import1>
+            <import2>
+            208.80
+            </import2>
+            <import3>
+            92.80
+            </import3>
+            <import4>
+            556.80
+            </import4>
+        </importe> 
+        </tabla2>
+    </Datos_factura>
+    <total>
+        <base>
+        970.00
+        </base>
+        <titulosemi>
+        I.V.A.
+        </titulosemi>
+        <iva_final>
+        16
+        </iva_final>
+        <titulosemi>
+        Cuota I.V.A.
+        </titulosemi>
+        <importe_final>
+        155.20
+        </importe_final>
+        <precio_final>
+        1125.20
+        </precio_final>
+    </total>
+</factura>

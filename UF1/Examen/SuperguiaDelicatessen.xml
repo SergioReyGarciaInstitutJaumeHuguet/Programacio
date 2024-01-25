@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Restaurante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="Examen.xsd">
+<Restaurant>
+    <infoGeneral>
+        <nom name="La mar al cor"/>
+        <alias>TAR9MR</alias>
+        <xefs>
+            <xef>Carme Mola</xef>
+        </xefs>
+        <ciutat>Tarragona</ciutat>
+        <telefon>977-216-543</telefon>
+        <diaVisita>
+            <dia>1</dia>
+            <mes>7</mes>
+            <any>2023</any>
+        </diaVisita>
+    </infoGeneral>
+    <menu>
+        <plats>
+            <plat>
+                <nomPlat>Amanida Cesar</nomPlat>
+                <preu>8.50€</preu>
+                <categoria cat="Principal"/>
+                <apteCeliac></apteCeliac>
+                <valoracio>4</valoracio>
+            </plat>
+            <plat>
+                <nomPlat>Rap a l'all cremat</nomPlat>
+                <preu>18.99€</preu>
+                <categoria cat="Principal"/>
+                <apteCeliac></apteCeliac>
+                <valoracio>5</valoracio>
+            </plat>
+            <plat>
+                <nomPlat>Pizza margarita de coliflor</nomPlat>
+                <preu>9.99€</preu>
+                <categoria cat="Principal"/>
+                <apteCeliac>Si</apteCeliac>
+                <valoracio>2</valoracio>
+            </plat>
+            <plat>
+                <nomPlat>Coulant de xocolata</nomPlat>
+                <preu>5.90€</preu>
+                <categoria cat="Postre"/>
+                <apteCeliac></apteCeliac>
+                <valoracio>5</valoracio>
+            </plat>
+        </plats>
+    </menu>
+</Restaurant>
+</Restaurante>

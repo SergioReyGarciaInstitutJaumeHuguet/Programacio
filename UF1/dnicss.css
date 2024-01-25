@@ -1,0 +1,17 @@
+dni_delante{
+    float: left;
+    width: 50%;
+    height: 50%;
+}
+titulo_dni{
+    float: left;
+    width: 100%;
+}
+pais{
+    color: blue;
+    font-weight: bold;
+}
+titulo_dni > nombre{
+    color: red;
+    font-weight: bold;
+}

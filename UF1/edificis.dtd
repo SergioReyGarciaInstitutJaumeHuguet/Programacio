@@ -1,0 +1,18 @@
+<!ATTLIST ciutat nom CDATA #REQUIRED>
+<!ELEMENT ciutat (carrer)>
+<!ATTLIST carrer nom CDATA #REQUIRED>
+<!ELEMENT carrer (edifici+)>
+<!ATTLIST edifici num CDATA #REQUIRED>
+<!ATTLIST edifici us CDATA #REQUIRED>
+<!ELEMENT edifici (botiga?, Planta+)>
+<!ATTLIST Planta num CDATA #REQUIRED>
+<!ELEMENT Planta (oficina+ | pis+)>
+<!ATTLIST oficina tamany CDATA #REQUIRED>
+<!ELEMENT oficina ANY>
+<!ATTLIST botiga tamany CDATA #REQUIRED>
+<!ELEMENT botiga ANY>
+<!ATTLIST pis num CDATA #REQUIRED>
+<!ATTLIST pis tamany CDATA #REQUIRED>
+<!ELEMENT pis ANY>
+<!ATTLIST terrasa tamany CDATA #REQUIRED>
+<!ELEMENT terrasa ANY>

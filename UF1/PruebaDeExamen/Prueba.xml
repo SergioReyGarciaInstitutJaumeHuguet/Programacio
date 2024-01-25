@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<departamentInformatica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="prueba.xsd">
+<!-- <!DOCTYPE departamentInformatica [
+    <!ELEMENT departamentInformatica (salaDeJuntes)>
+    <!ELEMENT salaDeJuntes (pc+,switch,Rosetes)>
+    <!ATTLIST salaDeJuntes id CDATA #REQUIRED>
+    <!ELEMENT pc (nom,ip,mac,nomXarxa,connexio?)>
+    <!ELEMENT nom (#PCDATA)>
+    <!ELEMENT ip (#PCDATA)>
+    <!ELEMENT mac (#PCDATA)>
+    <!ELEMENT nomXarxa (#PCDATA)>
+    <!ELEMENT connexio (#PCDATA)>
+    <!ELEMENT switch (xarxa)>
+    <!ATTLIST switch id CDATA #REQUIRED>
+    <!ELEMENT xarxa (idXarxa)>
+    <!ELEMENT idXarxa (#PCDATA)>
+    <!ELEMENT Rosetes (R+)>
+    <!ELEMENT R (cableEthernet+)>
+    <!ATTLIST R id CDATA #REQUIRED>
+    <!ELEMENT cableEthernet (#PCDATA)>
+]> -->
+    <salaDeJuntes id="04">
+        <pc>
+            <nom>pc01</nom>
+            <ip>192.168.2.41</ip>
+            <mac>12:34:A0:87:78:BF</mac>
+            <nomXarxa>gopokupu</nomXarxa>
+        </pc>
+        <pc>
+            <nom>pc02</nom>
+            <ip>192.168.2.42</ip>
+            <mac>12:34:A0:C0:12:FA</mac>
+            <nomXarxa>vegepetapa</nomXarxa>
+            <connexio>RS02</connexio>
+        </pc>
+        <switch id="SW01">
+            <xarxa>
+                <idXarxa>Aladino</idXarxa>
+            </xarxa>
+        </switch>
+        <Rosetes>
+            <R id="RS02">
+                <cableEthernet>04RS02-04SW01</cableEthernet>
+            </R>
+            <R id="RS04-06">
+                <cableEthernet>04RS04-04SW01</cableEthernet>
+                <cableEthernet>04RS06-04SW01</cableEthernet>
+            </R>
+        </Rosetes>
+    </salaDeJuntes>
+</departamentInformatica>

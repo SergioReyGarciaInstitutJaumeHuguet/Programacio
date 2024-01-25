@@ -1,0 +1,13 @@
+<!ELEMENT stock (productes)>
+<!ELEMENT productes (producte+)>
+<!ELEMENT producte (nom, ((preu, marca) | (marca, preu)), fer_comanda*, quantitat_disponible*, fer_comanda*, distribuidors)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT preu (#PCDATA)>
+<!ELEMENT quantitat_disponible (#PCDATA)>
+<!ELEMENT distribuidors (distribuidor*, fabrica*)>
+<!ELEMENT fer_comanda (#PCDATA)>
+<!ELEMENT distribuidor (#PCDATA)>
+<!ELEMENT fabrica (nom, adreca, tlf)>
+<!ELEMENT adreca (#PCDATA)>
+<!ELEMENT tlf (#PCDATA)>

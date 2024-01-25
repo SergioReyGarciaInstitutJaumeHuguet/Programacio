@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monitors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="monitors.xsd">
+    <monitor tipus="LED" model="m0010">
+        <mida>24</mida>
+        <rati>16:9</rati>
+        <dataLlancament>2009-09-10</dataLlancament>
+        <caracteristica>100% sRGB color </caracteristica>
+        <caracteristica>High contrast ratio</caracteristica>
+        <preu>200</preu>
+    </monitor>
+    <monitor tipus="LCD" model="m0101">
+        <mida>20</mida>
+        <rati>16:10</rati>
+        <dataLlancament>2008-09-10</dataLlancament>
+        <caracteristica>Alt ajustament</caracteristica>
+        <preu>120</preu>
+    </monitor>
+    <monitor tipus="CRT" model="c0120">
+        <mida>15</mida>
+        <rati>4:3</rati>
+        <dataLlancament>2002-09-10</dataLlancament>
+        <preu>50</preu>
+    </monitor>
+</monitors>

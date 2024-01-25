@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <?xml-stylesheet type="text/css" href="Factura2css.css" ?> -->
+<facturaxsd xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="xsd/factura.xsd">
+<!-- <!DOCTYPE factura[
+    <!ELEMENT factura (numfactura, bloque1, titulo_datos_cliente, datos_cliente, titulo_datos_factura, datos_factura, bloque7, bloque8, TOTAL)>
+    <!ELEMENT numfactura (#PCDATA)>
+    <!ELEMENT bloque1 (datos_empresa, info_factura)>
+    <!ELEMENT datos_empresa (nombre_empresa, calle, ciudad, cif, telefono, fax)>
+    <!ELEMENT nombre_empresa (#PCDATA)>
+    <!ELEMENT calle (#PCDATA)>
+    <!ELEMENT ciudad (#PCDATA)>
+    <!ELEMENT cif (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT fax (#PCDATA)>
+    <!ELEMENT info_factura (fecha, num_pedido, forma_de_pago)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT num_pedido (#PCDATA)>
+    <!ELEMENT forma_de_pago (#PCDATA)>
+    <!ELEMENT titulo_datos_cliente (#PCDATA)>
+    <!ELEMENT datos_cliente (num_cliente, nombre, direccion_de_envio, poblacion, cod_postal, provincia)>
+    <!ELEMENT num_cliente (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT direccion_de_envio (#PCDATA)>
+    <!ELEMENT poblacion (#PCDATA)>
+    <!ELEMENT cod_postal (#PCDATA)>
+    <!ELEMENT provincia (#PCDATA)>
+    <!ELEMENT titulo_datos_factura (#PCDATA)>
+    <!ELEMENT datos_factura (bloque2, bloque3, bloque4, bloque5, bloque6)>
+    <!ELEMENT bloque2 (titulo_ref, titulo_desc, titulo_cantidad, titulo_precio, titulo_IVA, titulo_importe)>
+    <!ELEMENT titulo_ref (#PCDATA)>
+    <!ELEMENT titulo_desc (#PCDATA)>
+    <!ELEMENT titulo_cantidad (#PCDATA)>
+    <!ELEMENT titulo_precio (#PCDATA)>
+    <!ELEMENT titulo_IVA (#PCDATA)>
+    <!ELEMENT titulo_importe (#PCDATA)>
+    <!ELEMENT bloque3 (ref1, desc1, cant1, precio1, iva1, importe1)>
+    <!ELEMENT ref1 (#PCDATA)>
+    <!ELEMENT desc1 (#PCDATA)>  
+    <!ELEMENT cant1 (#PCDATA)>  
+    <!ELEMENT precio1 (#PCDATA)>  
+    <!ELEMENT iva1 (#PCDATA)>  
+    <!ELEMENT importe1 (#PCDATA)> 
+    <!ELEMENT bloque4 (ref2, desc2, cant2, precio2, iva2, importe2)>
+    <!ELEMENT ref2 (#PCDATA)>
+    <!ELEMENT desc2 (#PCDATA)>  
+    <!ELEMENT cant2 (#PCDATA)>  
+    <!ELEMENT precio2 (#PCDATA)>  
+    <!ELEMENT iva2 (#PCDATA)>  
+    <!ELEMENT importe2 (#PCDATA)> 
+    <!ELEMENT bloque5 (ref3, desc3, cant3, precio3, iva3, importe3)>
+    <!ELEMENT ref3 (#PCDATA)>
+    <!ELEMENT desc3 (#PCDATA)>  
+    <!ELEMENT cant3 (#PCDATA)>  
+    <!ELEMENT precio3 (#PCDATA)>  
+    <!ELEMENT iva3 (#PCDATA)>  
+    <!ELEMENT importe3 (#PCDATA)> 
+    <!ELEMENT bloque6 (ref4, desc4, cant4, precio4, iva4, importe4)>
+    <!ELEMENT ref4 (#PCDATA)>
+    <!ELEMENT desc4 (#PCDATA)>  
+    <!ELEMENT cant4 (#PCDATA)>  
+    <!ELEMENT precio4 (#PCDATA)>  
+    <!ELEMENT iva4 (#PCDATA)>  
+    <!ELEMENT importe4 (#PCDATA)> 
+    <!ELEMENT bloque7 (titulo_base_imponible, titulo_iva_total, titulo_cuota_iva)>
+    <!ELEMENT titulo_base_imponible (#PCDATA)>
+    <!ELEMENT titulo_iva_total (#PCDATA)>
+    <!ELEMENT titulo_cuota_iva (#PCDATA)>
+    <!ELEMENT bloque8 (base_imponible, iva_total, cuota_iva)>
+    <!ELEMENT base_imponible (#PCDATA)>
+    <!ELEMENT iva_total (#PCDATA)>
+    <!ELEMENT cuota_iva (#PCDATA)>
+    <!ELEMENT TOTAL (#PCDATA)>
+]> -->
+    <factura>
+        <numfactura>
+            999
+        </numfactura>
+        <bloque1>
+            <datos_empresa>
+                <nombre_empresa>
+                    Equipos Digitales S.L.
+                </nombre_empresa>
+                <calle>
+                    AV. Valladolid
+                </calle>
+                <ciudad>
+                    Madrid 28015
+                </ciudad>
+                <cif>
+                    Q-9876546543
+                </cif>
+                <telefono>
+                    91.777.66.88
+                </telefono>
+                <fax>
+                    91.777.66.99
+                </fax>
+            </datos_empresa>
+            <info_factura>
+                <fecha>
+                    12-01-2005
+                </fecha>
+                <num_pedido>
+                    731
+                </num_pedido>
+                <forma_de_pago>
+                    EFECTIVO
+                </forma_de_pago>
+            </info_factura>
+        </bloque1>
+        <titulo_datos_cliente>
+            Datos CLIENTE
+        </titulo_datos_cliente>
+        <datos_cliente>
+            <num_cliente>
+                879
+            </num_cliente>
+            <nombre>
+                Darío Bueno Gutiérrez
+            </nombre>
+            <direccion_de_envio>
+                Av. Oporto nº7 4ºd
+            </direccion_de_envio>
+            <poblacion>
+                Madrid
+            </poblacion>
+            <cod_postal>
+                28043
+            </cod_postal>
+            <provincia>
+                Madrid
+            </provincia>
+        </datos_cliente>
+        <titulo_datos_factura>
+            Datos FACTURA
+        </titulo_datos_factura>
+        <datos_factura>
+            <bloque2>
+                <titulo_ref>
+                    REF.
+                </titulo_ref>
+                <titulo_desc>
+                    DESCRIPCIÓN
+                </titulo_desc>
+                <titulo_cantidad>
+                    CANT.
+                </titulo_cantidad>
+                <titulo_precio>
+                    PRECIO.
+                </titulo_precio>
+                <titulo_IVA>
+                    I.V.A.
+                </titulo_IVA>
+                <titulo_importe>
+                    IMPORTE
+                </titulo_importe>
+            </bloque2>
+            <bloque3>
+                <ref1>
+                    MII93000F/8
+                </ref1>
+                <desc1>
+                    MICRO PENTIUM IV 3000MHZ FB800
+                </desc1>
+                <cant1>
+                    1
+                </cant1>
+                <precio1>
+                    230 
+                </precio1>
+                <iva1>
+                    16,0
+                </iva1>
+                <importe1>
+                    266,80
+                </importe1>
+            </bloque3>
+            <bloque4>
+                <ref2>
+                    MB8QDIP4
+                </ref2>
+                <desc2>
+                    PLACA BASE QDI P4
+                </desc2>
+                <cant2>
+                    1
+                </cant2>
+                <precio2>
+                    180 
+                </precio2>
+                <iva2>
+                    16,0
+                </iva2>
+                <importe2>
+                    208,80
+                </importe2>
+            </bloque4>
+            <bloque5>
+                <ref3>
+                    MEDD512M32
+                </ref3>
+                <desc3>
+                    DIMM DDR 512MB 3200
+                </desc3>
+                <cant3>
+                    2
+                </cant3>
+                <precio3>
+                    40 
+                </precio3>
+                <iva3>
+                    16,0
+                </iva3>
+                <importe3>
+                    92,80
+                </importe3>
+            </bloque5>
+            <bloque6>
+                <ref4>
+                    HD250GSA7
+                </ref4>
+                <desc4>
+                    DISCO DURO 250GB S-ATA 7200
+                </desc4>
+                <cant4>
+                    4
+                </cant4>
+                <precio4>
+                    120 
+                </precio4>
+                <iva4>
+                    16,0
+                </iva4>
+                <importe4>
+                    556,80
+                </importe4>
+            </bloque6>
+        </datos_factura>
+            <bloque7>
+                <titulo_base_imponible>
+                    Base imponible
+                </titulo_base_imponible>
+                <titulo_iva_total>
+                    % I.V.A.
+                </titulo_iva_total>
+                <titulo_cuota_iva>
+                    Cuota I.V.A.
+                </titulo_cuota_iva>
+            </bloque7>
+            <bloque8>
+                <base_imponible>
+                    970,00
+                </base_imponible>
+                <iva_total>
+                    16,0
+                </iva_total>
+                <cuota_iva>
+                    155,20
+                </cuota_iva>
+            </bloque8>
+        <TOTAL>
+            1125,20
+        </TOTAL>
+    </factura>
+</facturaxsd>
