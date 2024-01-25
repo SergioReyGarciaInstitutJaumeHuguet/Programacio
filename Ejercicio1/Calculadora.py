@@ -1,6 +1,0 @@
-num1 = float(input("Número 1: "))
-num2 = float(input("Número 2: "))
-print(f"La suma de los dos números es: {num1 + num2}")
-print(f"La resta de los dos números es: {num1 - num2}")
-print(f"La multiplicación de los dos números es: {num1 * num2}")
-print(f"La división de los dos números es: {num1 / num2}")
