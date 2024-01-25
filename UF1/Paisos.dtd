@@ -1,6 +1,0 @@
-<!ELEMENT paisos (pais+)>
-<!ELEMENT pais (nom,continent,num_hab,govern)>
-<!ELEMENT nom (#PCDATA)>
-<!ELEMENT continent (#PCDATA)>
-<!ELEMENT num_hab (#PCDATA)>
-<!ELEMENT govern EMPTY>
