@@ -198,6 +198,6 @@ while Terminar:
         system("cls")
         terminar(fons)
     if keyboard.is_pressed('q') or keyboard.is_pressed('Q'):
-        Terminar = True
+        Terminar = False
 print("Felicitats, has terminat el joc")
 print(f"Temps: {round(time.time() - tempsInici, 2)} segons")
