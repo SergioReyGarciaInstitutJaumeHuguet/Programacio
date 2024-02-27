@@ -245,10 +245,11 @@ def mostrarPueblo(x):
         if i["Población"] == x: 
             for k,v in i.items():
                 print(f"{k}: {v}", end=" ")
+            print()
 
 def menu():
     while True:
-        print("\nAGENDA")
+        print("AGENDA")
         print("1 - Afegir contacte")
         print("2 - Mostrar Agenda")
         print("3 - Buscar contacte")
