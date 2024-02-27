@@ -122,8 +122,11 @@ def verificar(x,y):
 
 def modificarContacte():
     lista = ["Nombre: ", "Teléfono: ", "Email: ", "Newsletter: ", "Población: "]
-    if mostrarContactes(): pass
+    try: len(agenda)
+    except NameError: pass
     else:
+        agenda.sort(key=get_id)
+        mostrarContactes()
         try: id = int(input("Dime el id de la persona que quieres modificar: "))
         except ValueError: print("Tiene que ser un número válido")
         else:
@@ -141,6 +144,7 @@ def modificarContacte():
                         else: print("ERROR")
 
 def cercarContacte():
+    agenda.sort(key=get_id)
     while True:
         nom = input("Dime un nombre\n")
         name(nom)
@@ -163,6 +167,7 @@ def mostrarContacte(x):
                     print(agenda[i])
 
 def exportar():
+    agenda.sort(key=get_id)
     directorioActual = os.path.dirname(os.path.abspath(__file__))
     os.chdir(directorioActual)
 
@@ -177,6 +182,7 @@ def importar():
         with open(filename) as archivo:
             agenda = json.load(archivo)
             print("Contenido del archivo JSON cargado correctamente:")
+            agenda.sort(key=get_id)
             mostrarContactes()
     except FileNotFoundError:
         print(f"No se pudo encontrar el archivo {filename}.")
@@ -185,34 +191,64 @@ def importar():
     id = agenda[-1]["ID"]
 
 def eliminarContacte():
+    agenda.sort(key=get_id)
     mostrarContactes()
     try: id = int(input("Dime el id de la persona que quieres eliminar\n"))
     except ValueError: print("Solo números")
     else:
         if verificar(id,"ID") == False: del agenda[id-1]
 
-def ordenar():
+def get_name(x):
+    return x.get('Nombre')
+
+def get_town(x):
+    return x.get('Población')
+
+def get_id(x):
+    return x.get('ID')
+
+def selecMostrar():
+    print("\
+1 - Mostrar contactes\n\
+2 - Mostrar contactes ordenats per Nom\n\
+3 - Mostrar contactes ordenats per Poblacio\n\
+4 - Mostrar contactes filtrats per Poblacio")
+    accion = input()
+    if accion == "1": 
+        agenda.sort(key=get_id)
+        mostrarContactes()
+    elif accion == "2": 
+        agenda.sort(key=get_name)
+        mostrarContactes()
+    elif accion == "3":
+        agenda.sort(key=get_town)
+        mostrarContactes()
+    elif accion == "4":
+        pueblo = input("¿De que población es?\n")
+        lista = pueblos()
+        if pueblo in lista: mostrarPueblo(pueblo)
+        else: print("El Pueblo ingresado no está en la lista")
+    else: print("No es una opción válida")
+
+def pueblos():
     try: len(agenda)
-    except NameError: print("No hay ningún usuario en la agenda")
+    except NameError: print("No tienes ningún usuario en la agenda")
     else:
-        accion = input("1 - Nom\n2 - Població\n¿Como lo quieres ordenado?\n")
-        if accion == "1":
-            agenda.sort(key=get_name)
-            print(agenda, end='\n\n')
-        elif accion == "2":
-            agenda.sort(key=get_town)
-            print(agenda, end='\n\n')
-        else: print("No es una opción válida")
+        pueblos = []
+        agenda.sort(key=get_town)
+        for i in agenda:
+            if i["Población"] not in pueblos: pueblos.append(i["Población"])
+        return pueblos
 
-def get_name(employee):
-    return employee.get('Nombre')
-
-def get_town(employee):
-    return employee.get('Población')
+def mostrarPueblo(x):
+    for i in agenda:
+        if i["Población"] == x: 
+            for k,v in i.items():
+                print(f"{k}: {v}", end=" ")
 
 def menu():
     while True:
-        print("AGENDA")
+        print("\nAGENDA")
         print("1 - Afegir contacte")
         print("2 - Mostrar Agenda")
         print("3 - Buscar contacte")
@@ -220,18 +256,16 @@ def menu():
         print("5 - Esborrar contacte")
         print("6 - Exportar contacte")
         print("7 - Importar contacte")
-        print("8 - Ordernar per...")
-        print("9 - Salir")
+        print("8 - Salir")
         accion = input("Selecciona una opción\n")
         if accion == "1": agregarContacte()
-        elif accion == "2": mostrarContactes()
-        elif accion == "3": mostrarContacte()
+        elif accion == "2": selecMostrar()
+        elif accion == "3": cercarContacte()
         elif accion == "4": modificarContacte()
         elif accion == "5": eliminarContacte()
         elif accion == "6": exportar()
         elif accion == "7": importar()
-        elif accion == "8": ordenar()
-        elif accion == "9": break
+        elif accion == "8": break
         else: print("No es una opción válida")
 
 menu()
