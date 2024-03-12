@@ -1,14 +1,17 @@
 package UF4.InstitutBasic;
 public class Institut {
 	
-	private String nom;
-	private Alumne[] llistaAlumnes;
-	private int num;
+	// Creo los objetos de la clase Institut
+	private String nom; // Nombre del instituto
+	private Alumne[] llistaAlumnes; // Lista de alumnos
+	private int num; // Numero de alumnos que hay en cada instituto
 	
+	// Muestro el nombre y alumnos del instituto
 	public String getInstitut() {
-		return "Este Instituto se llama " + nom + ", y alberga " + llistaAlumnes + " alumnos";
+		return "Este Instituto se llama " + nom + ", y alberga " + num + " alumnos";
 	}
 	
+	// Creo los institutos
 	public void setInstitut(String insti) {
 		this.nom = insti;
 		this.llistaAlumnes = new Alumne[100];
@@ -21,11 +24,13 @@ public class Institut {
 		this.num=0;
 	}
 	
+	// Añado al alumno a la tabla
 	public void afegirAlumne(Alumne a) {
 		this.llistaAlumnes[num] = a;
 		this.num++;
 	}
 	
+	// Muestro a los alumnos
 	public void verAlumne() {
 		for (int i = 0; i < llistaAlumnes.length; i++) {
 			if(llistaAlumnes[i] != null){
