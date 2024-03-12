@@ -29,7 +29,9 @@ public class Institut {
 	public void verAlumne() {
 		for (int i = 0; i < llistaAlumnes.length; i++) {
 			if(llistaAlumnes[i] != null){
-				System.out.println(llistaAlumnes[i]);
+				System.out.println();
+				System.out.print(llistaAlumnes[i]);
+				System.out.println(" Institut: " + this.nom);
 			}
 		}
 	}
