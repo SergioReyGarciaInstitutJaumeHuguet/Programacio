@@ -3,7 +3,7 @@ package UF4.Consesionari;
 public class Concessionari {
 
 	private Cotxe[] llistaCotxes = new Cotxe[100];
-	private String a, b = " ", c;
+	private String a, b = " ", c = "";
 	private int num = 0;
 	
 	public void nouCotxe(Cotxe a) {
