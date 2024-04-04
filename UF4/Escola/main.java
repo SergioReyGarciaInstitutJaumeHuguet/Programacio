@@ -1,18 +1,18 @@
 package UF4.Escola;
-import java.util.HashSet;
 public class main {
 
 	public static void main(String[] args){
 		Estudiant e1 = new Estudiant("Sergio", "Carrer Segarra", "DAM", 1);
-		HashSet<String> assignatures1 = new HashSet<>();
-        assignatures1.add("M1");
-        assignatures1.add("M4");
-        assignatures1.add("M8");
-		Professor p1 = new Professor("Alex", "Carrer Avenir", assignatures1);
+		Professor p1 = new Professor("Alex", "Carrer Avenir");
+		p1.afegirAssignatura("M1");
+		p1.afegirAssignatura("M2");
+		p1.afegirAssignatura("M6");
 		EstudiantInternacional ei1 = new EstudiantInternacional("Adolf", "Carrer Edimburg", "DAW", 2, "Alemania");
 		System.out.println(e1);
 		System.out.println(p1);
 		System.out.println(ei1);
+		p1.treureAssignatura("M1");
+		System.out.println(p1);
 
 	}
 

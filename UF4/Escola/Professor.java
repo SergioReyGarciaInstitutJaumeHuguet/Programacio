@@ -13,9 +13,19 @@ public class Professor extends Persona{
 		this.assignatures = assignatures;
 	}
 
-	public Professor(String nom, String adreca, HashSet<String> assignatures) {
+	public Professor(String nom, String adreca) {
 		super(nom, adreca);
-		this.assignatures = assignatures;
+		this.assignatures = new HashSet<>();
+	}
+	
+	public boolean afegirAssignatura(String a){
+		assignatures.add(a);
+		return true;
+	}
+
+	public boolean treureAssignatura(String a){
+		assignatures.remove(a);
+		return true;
 	}
 
 	@Override
