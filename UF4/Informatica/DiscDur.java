@@ -11,6 +11,10 @@ public class DiscDur extends Articles{
 		this.preuTotal = (preuBase * capacitat)/10;
 	}
 
+	public float preuTotal() {
+		return preuTotal;
+	}
+	
 	@Override
 	public String toString() {
 		return codi + "	" + descripcio + "	" + unitats + "	" + capacitat + " " + "GB" + "		" + preuTotal;

@@ -9,6 +9,10 @@ public class CPU extends Articles{
 		this.mhz = mhz;
 		this.preuTotal = preuBase * mhz;
 	}
+	
+	public float preuTotal() {
+		return preuTotal;
+	}
 
 	@Override
 	public String toString() {
