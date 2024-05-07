@@ -1,7 +1,0 @@
-
-public interface Vaixell {
-
-	protected String matricula;
-	protected double eslora;
-	protected int any;
-}

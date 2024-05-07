@@ -1,9 +1,0 @@
-
-public class Main {
-
-	public static void main(String[] args) {
-		Port tarragona = new Port("Tarragona");
-		VaixellSenseMotor vaixell1 = new VaixellSenseMotor("487584T",25,1995);
-	}
-
-}

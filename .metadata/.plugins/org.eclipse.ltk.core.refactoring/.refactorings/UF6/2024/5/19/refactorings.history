@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move element &apos;ConexioDataBase.java&apos; to &apos;UF6/src/DatabasePelicules&apos;&#x0D;&#x0A;- Original project: &apos;UF6&apos;&#x0D;&#x0A;- Destination element: &apos;UF6/src/DatabasePelicules&apos;&#x0D;&#x0A;- Original element: &apos;ConexioDataBase.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;DatabasePelicules" element1="/src&lt;{ConexioDataBase.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1715096563966" units="1" version="1.0"/>
-</session>

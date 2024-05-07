@@ -1,9 +1,0 @@
-
-public class IotLuxe extends VaixellAmbMotor{
-
-	public IotLuxe(String matricula, double eslora, int any, int potenciaCV) {
-		super(matricula, eslora, any, potenciaCV);
-	}
-
-	
-}
