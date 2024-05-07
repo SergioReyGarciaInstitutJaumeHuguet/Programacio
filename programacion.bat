@@ -1,1 +1,0 @@
-xcopy C:\Users\sergio\eclipse-workspace C:\Users\sergio\Desktop\Programacion /s /i
