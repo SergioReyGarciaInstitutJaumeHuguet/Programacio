@@ -1,7 +1,0 @@
-pos1 = float(input("Dime la posición 1 de la A: "))
-pos2 = float(input("Dime la posición 1 de la B: "))
-pos3 = float(input("Dime la posición 2 de la A: "))
-pos4 = float(input("Dime la posición 2 del B: "))
-a = (pos1-pos3)
-b = (pos2-pos4)
-print(f"La distancia es: {pow(pow(a,2) + pow(b,2),0.5)}")
