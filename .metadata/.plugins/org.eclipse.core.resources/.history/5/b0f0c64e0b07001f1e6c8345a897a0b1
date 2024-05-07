@@ -1,0 +1,7 @@
+
+public interface Vaixell {
+	
+	public void Vaixell(String matricula, double mida, int any);
+	public abstract double importAssociatAlVaixell();
+	public double preuBase();
+}

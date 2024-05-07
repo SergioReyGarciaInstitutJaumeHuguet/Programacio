@@ -1,0 +1,15 @@
+package Prueba;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
+public class prueba {
+	DateTimeFormatter from = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+	localDate data = LocalDate.parse(dataFormatString,form);
+	long dies = ChronoUnit.DAYS.between(dataInicial, dataFinal)
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

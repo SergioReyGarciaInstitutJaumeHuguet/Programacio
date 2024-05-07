@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+public class Port {
+	private String ciutat;
+	private ArrayList <Lloguer> lloguers;
+	
+	public Port(String ciutat) {
+		this.ciutat = ciutat;
+	}
+	
+	public boolean afegirLloguer(Lloguer r) {
+		lloguers.add(r);
+		return true;
+	}
+	
+	public double calcularImportMes(int mes, int any) {
+		return 0;
+	}
+	
+	public void informe() {
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+
+public abstract class Vaixell {
+	
+	protected String matricula;
+	protected double eslora;
+	protected int any;
+	
+	public void Vaixell(String matricula, double eslora, int any) {
+		this.matricula = matricula;
+		this.eslora = eslora;
+		this.any = any;
+	};
+	public abstract double importAssociatAlVaixell();
+	public double preuBase() {
+		return 2;
+	};
+}

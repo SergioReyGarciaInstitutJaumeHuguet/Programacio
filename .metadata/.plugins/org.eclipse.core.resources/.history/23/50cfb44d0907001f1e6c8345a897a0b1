@@ -1,0 +1,6 @@
+
+public interface Vaixell {
+
+	extends String matricula;
+	
+}

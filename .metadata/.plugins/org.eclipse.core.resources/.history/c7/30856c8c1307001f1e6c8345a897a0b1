@@ -1,0 +1,34 @@
+
+public class Lloguer {
+	private String dni, dataIni, dataFi;
+	private static double valor_Fix;
+	private Vaixell vaixell;
+	
+	
+	public Lloguer(String dni, String dataIni, String dataFi) {
+		this.dni = dni;
+		this.dataIni = dataIni;
+		this.dataFi = dataFi;
+	}
+	
+	public void setVaixell(Vaixell vaixell) {
+		this.vaixell = vaixell;
+	}
+	
+	public long dies() {
+		
+		return 0;
+	}
+	
+	public double importTotal() {
+	
+		return 0;
+	}
+	
+	public double importPerDia() {
+		
+		return 0;
+	}
+	
+
+}

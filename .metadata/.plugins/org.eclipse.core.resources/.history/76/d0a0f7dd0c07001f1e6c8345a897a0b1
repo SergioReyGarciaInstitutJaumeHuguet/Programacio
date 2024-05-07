@@ -1,0 +1,12 @@
+
+public class VaixellSenseMotor extends Vaixell{
+
+	@Override
+	public double importAssociatAlVaixell() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
+	
+}

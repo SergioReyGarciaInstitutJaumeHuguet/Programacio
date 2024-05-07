@@ -1,0 +1,7 @@
+import java.util.ArrayList;
+public class Port {
+	private String ciutat;
+	private ArrayList <Lloguer> lloguers;
+	this.lloguers = new Arraylist<Lloguer>;
+
+}

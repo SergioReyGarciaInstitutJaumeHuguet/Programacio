@@ -1,5 +1,0 @@
-num = int(input("Dame un número: "))
-cuadr = pow(num, 1/2)
-print(f"La raiz cuadrada es: {cuadr}")
-cub = pow(num, 1/3)
-print(f"La raiz cubica es: {cub}")

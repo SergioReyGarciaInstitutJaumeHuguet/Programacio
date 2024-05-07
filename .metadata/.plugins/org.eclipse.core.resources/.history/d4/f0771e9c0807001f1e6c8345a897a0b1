@@ -1,0 +1,6 @@
+
+public class Lloguer {
+	private String dni, dataIni, dataFi;
+	static double Valor_Fix = 0;
+
+}

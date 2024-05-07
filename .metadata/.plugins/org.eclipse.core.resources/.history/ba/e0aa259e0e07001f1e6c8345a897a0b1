@@ -1,0 +1,10 @@
+
+public class VaixellAmbMotor extends Vaixell{
+
+	private int potenciaCV;
+	
+	public double importAssociatAlVaixell() {
+		return (preuBase() + this.potenciaCV);
+	}
+
+}

@@ -1,0 +1,44 @@
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
+
+public class Lloguer {
+	DateTimeFormatter form = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+	LocalDate data1 = LocalDate.parse(dataInicial,form);
+	LocalDate data2 = LocalDate.parse(dataFinal,form);
+	long dies = ChronoUnit.DAYS.between(data1, data2);
+	System.out.println(data1);
+	System.out.println(data2);
+	System.out.println(dies);
+	private String dni, dataIni, dataFi;
+	private static double valor_Fix;
+	private Vaixell vaixell;
+	
+	
+	public Lloguer(String dni, String dataIni, String dataFi) {
+		this.dni = dni;
+		this.dataIni = dataIni;
+		this.dataFi = dataFi;
+	}
+	
+	public void setVaixell(Vaixell vaixell) {
+		this.vaixell = vaixell;
+	}
+	
+	public long dies() {
+		
+		return 0;
+	}
+	
+	public double importTotal() {
+	
+		return 0;
+	}
+	
+	public double importPerDia() {
+		
+		return 0;
+	}
+	
+
+}

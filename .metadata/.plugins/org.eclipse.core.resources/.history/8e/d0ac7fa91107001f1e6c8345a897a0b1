@@ -1,0 +1,13 @@
+package Prueba;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
+public class prueba {
+	DateTimeFormatter from = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

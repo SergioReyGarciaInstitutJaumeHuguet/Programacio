@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+public class Port {
+	private String ciutat;
+	private ArrayList <Lloguer> lloguers;
+	
+	public Port(String ciutat) {
+		this.ciutat = ciutat;
+	}
+	
+	public boolean afegirLloguer(Lloger r) {
+		return 0;
+	}
+
+}

@@ -1,0 +1,39 @@
+import java.sql.*;
+
+public class ConexioDataBase {
+	private static Connection connexio;
+	public final static String USER = "root";
+	public final static String PASSW = "2012";
+	private static Connection conexion;
+	public static void main(String[] args) {
+	try {
+	connexio = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/pelicules?serverTimezone=Europe/Madrid", USER, PASSW);
+	System.out.println("Server Connectat");
+	}catch(SQLException e) {
+
+	e.printStackTrace();
+	}
+	}
+	
+	public static void getValues(String db, String table_name) {
+	    try {
+	        String Querydb = "USE "+db+";";
+	        Statement stdb = conexion.createStatement();
+	        java.sql.ResultSet resultSet;
+	        resultSet = stdb.executeQuery(Querydb);
+	        
+	        while(resultSet.next()) {
+	            System.out.println("ID: "+resultSet.getString("ID") + " "
+	            + "Nombre: "+resultSet.getString("Nombre") + " "
+	            + "Apellido: "+resultSet.getString("Apellido") + " "
+	            + "Edad: "+resultSet.getString("Edad") + " "
+	            + "Sexo: "+resultSet.getString("Sexo") + " "
+	            );
+	        }
+	    } catch(SQLException ex) {
+	        System.out.println(ex.getMessage());
+	        System.out.println("error en la adquisicion de datos");
+	    }
+	}
+
+}

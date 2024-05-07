@@ -1,0 +1,14 @@
+
+public class Lloguer {
+	private String dni, dataIni, dataFi;
+	static final double Valor_Fix;
+	private Vaixell vaixell;
+	public Lloguer(String dni, String dataIni, String dataFi, Vaixell vaixell) {
+		super();
+		this.dni = dni;
+		this.dataIni = dataIni;
+		this.dataFi = dataFi;
+		this.vaixell = vaixell;
+	}
+
+}

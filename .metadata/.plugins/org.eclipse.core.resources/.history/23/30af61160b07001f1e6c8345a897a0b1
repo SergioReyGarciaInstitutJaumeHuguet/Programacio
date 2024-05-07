@@ -1,0 +1,11 @@
+
+public interface Vaixell {
+
+	static final String matricula = "";
+	static final double eslora = 0;
+	static final int any = 0;
+	
+	public void Vaixell(String matricula, double mida, int any);
+	public abstract double importAssociatAlVaixell();
+	public double preuBase();
+}

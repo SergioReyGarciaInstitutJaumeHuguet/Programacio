@@ -1,0 +1,48 @@
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+public class Port {
+	private String ciutat;
+	private ArrayList <Lloguer> lloguers;
+	
+	public Port(String ciutat) {
+		this.ciutat = ciutat;
+	}
+	
+	public boolean afegirLloguer(Lloguer r) {
+		if (lloguers.contains(r)) {
+			lloguers.add(r);
+			System.out.println("Lloguer afegit a la llista");
+			return true;
+		}
+		else {
+			System.out.println("ERROR");
+			System.out.println("---------------------------------");
+			System.out.println("Ja tens aquet lloguer a la llista");
+			return false;
+		}
+	}
+	
+	public double calcularImportMes(int mes, int any) {
+		DateTimeFormatter form = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		int importMes = 0;
+		for (Lloguer lloguer:lloguers) {
+			String dataFi = lloguer.getDataFi();
+			LocalDate data = LocalDate.parse(dataFi,form);
+			int month = data.getMonthValue();
+			int year = data.getYear();
+			if((month != mes) && (year != any)) {
+				importMes += lloguer.importTotal();
+			}
+		}
+		return importMes;
+	}
+	
+	public void informe() {
+		System.out.println("Port: " + this.ciutat);
+		for (Lloguer lloguer:lloguers) {
+			System.out.println(lloguer);
+		}
+	}
+
+}

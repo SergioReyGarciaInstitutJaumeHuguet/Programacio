@@ -1,0 +1,8 @@
+
+public class VaixellSenseMotor extends Vaixell{
+
+	public VaixellSenseMotor() {
+		super();
+	}
+	
+}

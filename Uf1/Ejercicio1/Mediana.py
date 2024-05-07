@@ -1,5 +1,0 @@
-print("Dime tres números")
-num1 = float(input())
-num2 = float(input())
-num3 = float(input())
-print(f"La media es: {(num1+num2+num3)/3}")
