@@ -17,15 +17,18 @@ public class ConexioDataBase {
 	        java.sql.ResultSet resultSet;
 	        resultSet = st.executeQuery(Query);
 	        
-	        while(resultSet.next()) {
-	            System.out.println("ID: "+resultSet.getString("id_peli") + " "
-	            + "Nom: "+resultSet.getString("nom") + " "
-	            + "Director: "+resultSet.getString("director") + " "
-	            + "Any producit: "+resultSet.getString("any_prod") + " "
-	            + "Llogada: "+resultSet.getString("llogada") + " "
-	            );
-	        }
-	    } catch(SQLException ex) {
+	        ResultSetMetaData metaData = resultSet.getMetaData();
+            int columnCount = metaData.getColumnCount();
+            System.out.println("Taula "+table_name+":");
+            while (resultSet.next()) {
+                for (int i = 1; i <= columnCount; i++) {
+                	if(!metaData.getColumnName(i).equals("id_peli")) {
+                		System.out.println(metaData.getColumnName(i)+": "+resultSet.getString(i));
+                	}
+                }
+	        	System.out.println();
+	        	}
+        }catch(SQLException ex) {
 	        System.out.println(ex.getMessage());
 	        System.out.println("error en la adquisicion de datos");
 	    }
